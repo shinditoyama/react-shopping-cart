@@ -1,4 +1,4 @@
-import { Box, LinearProgress, Typography } from '@mui/material';
+import { Box, LinearProgress, Typography } from "@mui/material";
 
 const ProgressBar = ({ title, percentage }) => {
     const porcentagem = percentage ? percentage : 0;

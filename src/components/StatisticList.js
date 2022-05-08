@@ -15,36 +15,37 @@ const StatisticList = ({ title, total }) => {
         <Box>
             {title}:
             <Divider sx={{ mb: 2 }} />
-            <Box>
-                <ProgressBar
-                    title="saudável"
-                    percentage={extractPercentage(
-                        selectedProduct.length,
-                        selectedProduct.filter((product) => product.tags.includes('healthy')).length
-                    )}
-                />
-                <ProgressBar
-                    title="não tão saudavel"
-                    percentage={extractPercentage(
-                        selectedProduct.length,
-                        selectedProduct.filter((product) => product.tags.includes('junk')).length
-                    )}
-                />
-                <ProgressBar
-                    title="limpeza"
-                    percentage={extractPercentage(
-                        selectedProduct.length,
-                        selectedProduct.filter((product) => product.tags.includes('cleaning')).length
-                    )}
-                />
-                <ProgressBar
-                    title="outros"
-                    percentage={extractPercentage(
-                        selectedProduct.length,
-                        selectedProduct.filter((product) => product.tags.includes('others')).length
-                    )}
-                />
 
+            <ProgressBar
+                title="saudável"
+                percentage={extractPercentage(
+                    selectedProduct.length,
+                    selectedProduct.filter((product) => product.tags.includes('healthy')).length
+                )}
+            />
+            <ProgressBar
+                title="não tão saudavel"
+                percentage={extractPercentage(
+                    selectedProduct.length,
+                    selectedProduct.filter((product) => product.tags.includes('junk')).length
+                )}
+            />
+            <ProgressBar
+                title="limpeza"
+                percentage={extractPercentage(
+                    selectedProduct.length,
+                    selectedProduct.filter((product) => product.tags.includes('cleaning')).length
+                )}
+            />
+            <ProgressBar
+                title="outros"
+                percentage={extractPercentage(
+                    selectedProduct.length,
+                    selectedProduct.filter((product) => product.tags.includes('others')).length
+                )}
+            />
+
+            <Box>
                 Total:
                 <p>
                     {total.toLocaleString('pt-br', {
@@ -59,6 +60,7 @@ const StatisticList = ({ title, total }) => {
                     )
                 }
             </Box>
+
         </Box>
     );
 }

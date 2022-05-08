@@ -1,4 +1,4 @@
-import { ListItem, ListItemIcon, ListItemText, Checkbox } from "@mui/material";
+import { ListItem, ListItemButton, ListItemIcon, ListItemText, Checkbox } from "@mui/material";
 
 const Item = ({ item, onClick }) => {
     return (
@@ -6,13 +6,17 @@ const Item = ({ item, onClick }) => {
             key={item.id}
             disablePadding
         >
-            <ListItemIcon>
-                <Checkbox
-                    checked={item.checked}
-                    onChange={onClick}
-                />
-            </ListItemIcon>
-            <ListItemText primary={item.name} />
+            <ListItemButton role={undefined} onClick={onClick} dense>
+                <ListItemIcon>
+                    <Checkbox
+                        edge="start"
+                        checked={item.checked}
+                        tabIndex={-1}
+                        disableRipple
+                    />
+                </ListItemIcon>
+                <ListItemText primary={item.name} />
+            </ListItemButton>
         </ListItem>
     );
 }

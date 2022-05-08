@@ -7,7 +7,7 @@ const ShoppingList = ({ title, data, onToggle }) => {
             {title}:
             <Divider />
             <List sx={{
-                height: 384,
+                height: 460,
                 overflow: 'auto',
             }}>
                 {data.map((item) => (

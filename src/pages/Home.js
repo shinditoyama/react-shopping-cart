@@ -1,7 +1,8 @@
-import { Box } from '@mui/material';
+import { Box, Container } from "@mui/material";
 import AppContent from "../components/AppContent";
 import ShoppingList from "../components/ShoppingList";
 import StatisticList from "../components/StatisticList";
+import Title from "../components/Title";
 
 import { useDispatch, useSelector } from "react-redux";
 import { toggleProduct } from "../store/slices/productSlice";
@@ -19,33 +20,36 @@ const Home = () => {
     return (
         <Box sx={{
             display: 'flex',
-            alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: '#cfe8fc',
+            alignItems: 'center',
+            backgroundColor: '#a3ffe7',
             height: '100vh',
         }}>
-            <AppContent
-                left={
-                    <ShoppingList
-                        title="Produtos disponíveis"
-                        data={products}
-                        onToggle={handleToggle}
-                    />
-                }
-                middle={
-                    <ShoppingList
-                        title="Lista de compras"
-                        data={selectedProduct}
-                        onToggle={handleToggle}
-                    />
-                }
-                right={
-                    <StatisticList
-                        title="Estatísticas"
-                        total={selectedProductTotalPrice}
-                    />
-                }
-            />
+            <Container maxWidth="lg">
+                <Title title="Shopping List" />
+                <AppContent
+                    left={
+                        <ShoppingList
+                            title="Produtos disponíveis"
+                            data={products}
+                            onToggle={handleToggle}
+                        />
+                    }
+                    middle={
+                        <ShoppingList
+                            title="Lista de compras"
+                            data={selectedProduct}
+                            onToggle={handleToggle}
+                        />
+                    }
+                    right={
+                        <StatisticList
+                            title="Estatísticas"
+                            total={selectedProductTotalPrice}
+                        />
+                    }
+                />
+            </Container>
         </Box>
     );
 }
