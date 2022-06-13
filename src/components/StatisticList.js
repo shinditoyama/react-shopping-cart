@@ -17,31 +17,35 @@ const StatisticList = ({ title, total }) => {
             <Divider sx={{ mb: 2 }} />
 
             <ProgressBar
-                title="saudável"
+                title="Saudável"
+                color="success"
                 percentage={extractPercentage(
                     selectedProduct.length,
                     selectedProduct.filter((product) => product.tags.includes('healthy')).length
                 )}
             />
             <ProgressBar
-                title="não tão saudavel"
+                title="Não tão saudavel"
+                color="error"
                 percentage={extractPercentage(
                     selectedProduct.length,
                     selectedProduct.filter((product) => product.tags.includes('junk')).length
                 )}
             />
             <ProgressBar
-                title="limpeza"
+                title="Limpeza & Higiênico"
+                color="primary"
                 percentage={extractPercentage(
                     selectedProduct.length,
-                    selectedProduct.filter((product) => product.tags.includes('cleaning')).length
+                    selectedProduct.filter((product) => product.tags.includes('cleaning') || product.tags.includes('hygiene')).length
                 )}
             />
             <ProgressBar
-                title="outros"
+                title="Outros"
+                color="secondary"
                 percentage={extractPercentage(
                     selectedProduct.length,
-                    selectedProduct.filter((product) => product.tags.includes('others')).length
+                    selectedProduct.filter((product) => !product.tags.includes('healthy') && !product.tags.includes('junk') && !product.tags.includes('cleaning') && !product.tags.includes('hygiene')).length
                 )}
             />
 

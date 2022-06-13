@@ -1,13 +1,13 @@
 import { Box, LinearProgress, Typography } from "@mui/material";
 
-const ProgressBar = ({ title, percentage }) => {
+const ProgressBar = ({ title, percentage, color }) => {
     const porcentagem = percentage ? percentage : 0;
 
     return (
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Box sx={{ width: '100%', mr: 1, mb: 3 }}>
                 {title}
-                <LinearProgress variant="determinate" value={porcentagem} />
+                <LinearProgress variant="determinate" value={porcentagem} color={color} />
             </Box>
             <Box sx={{ minWidth: 35 }}>
                 <Typography variant="body2" color="text.secondary">

@@ -4,6 +4,7 @@ const Item = ({ item, onClick }) => {
     return (
         <ListItem
             key={item.id}
+            secondaryAction={<ListItemText primary={`R$ ${item.price}`} />}
             disablePadding
         >
             <ListItemButton role={undefined} onClick={onClick} dense>

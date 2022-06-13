@@ -123,8 +123,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         },
         {
@@ -134,8 +133,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         },
         {
@@ -145,8 +143,7 @@
             "checked": false,
             "price": 7.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         },
         {
@@ -156,8 +153,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "health",
-                "others"
+                "health"
             ]
         },
         {
@@ -177,8 +173,7 @@
             "checked": false,
             "price": 11.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         },
         {
@@ -198,8 +193,7 @@
             "checked": false,
             "price": 21.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         },
         {
@@ -209,8 +203,7 @@
             "checked": false,
             "price": 10.99,
             "tags": [
-                "health",
-                "others"
+                "health"
             ]
         },
         {
@@ -240,8 +233,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "grain",
-                "others"
+                "grain"
             ]
         },
         {
@@ -273,8 +265,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         },
         {
@@ -304,8 +295,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "health",
-                "others"
+                "health"
             ]
         },
         {
@@ -431,8 +421,7 @@
             "checked": false,
             "price": 0.99,
             "tags": [
-                "condiment",
-                "others"
+                "condiment"
             ]
         },
         {
@@ -504,8 +493,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         },
         {
@@ -556,8 +544,7 @@
             "checked": false,
             "price": 1.99,
             "tags": [
-                "hygiene",
-                "others"
+                "hygiene"
             ]
         }
     ]
