@@ -3,17 +3,17 @@
         {
             "id": "9d08c3d5-1960-5445-98b7-51fa4fcbadaa",
             "type": "item",
-            "name": "Água oxigenada",
+            "name": "Água mineral",
             "checked": false,
             "price": 1.99,
             "tags": [
-                "others"
+                "healthy"
             ]
         },
         {
             "id": "219a1932-72c4-572f-805c-5a4f3e3fbd62",
             "type": "item",
-            "name": "Água Sanitária",
+            "name": "Água sanitária",
             "checked": false,
             "price": 5.99,
             "tags": [

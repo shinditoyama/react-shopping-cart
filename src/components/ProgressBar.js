@@ -4,8 +4,8 @@ const ProgressBar = ({ title, percentage, color }) => {
     const porcentagem = percentage ? percentage : 0;
 
     return (
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1, mb: 3 }}>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1, mb: 3 }}>
                 {title}
                 <LinearProgress variant="determinate" value={porcentagem} color={color} />
             </Box>

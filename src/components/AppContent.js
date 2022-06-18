@@ -1,12 +1,12 @@
-import { Card, CardContent, Grid } from '@mui/material';
+import { Card, CardContent, Grid } from "@mui/material";
 
 const AppContent = ({ left, middle, right }) => {
     return (
         <Card sx={{
             border: 1,
 			borderRadius: 2,
-            borderColor: 'grey.500',
-            overflow: 'auto',
+            borderColor: "grey.500",
+            overflow: "auto",
         }}>
             <CardContent>
                 <Grid container spacing={{ xs: 1, md: 3 }} >

@@ -1,7 +1,7 @@
-import { Box, Divider, Button } from '@mui/material';
+import { Box, Divider, Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { clearList } from "../store/slices/productSlice";
-import ProgressBar from './ProgressBar';
+import ProgressBar from "./ProgressBar";
 
 const StatisticList = ({ title, total }) => {
     const dispatch = useDispatch();
@@ -21,7 +21,7 @@ const StatisticList = ({ title, total }) => {
                 color="success"
                 percentage={extractPercentage(
                     selectedProduct.length,
-                    selectedProduct.filter((product) => product.tags.includes('healthy')).length
+                    selectedProduct.filter((product) => product.tags.includes("healthy")).length
                 )}
             />
             <ProgressBar
@@ -29,7 +29,7 @@ const StatisticList = ({ title, total }) => {
                 color="error"
                 percentage={extractPercentage(
                     selectedProduct.length,
-                    selectedProduct.filter((product) => product.tags.includes('junk')).length
+                    selectedProduct.filter((product) => product.tags.includes("junk")).length
                 )}
             />
             <ProgressBar
@@ -37,7 +37,7 @@ const StatisticList = ({ title, total }) => {
                 color="primary"
                 percentage={extractPercentage(
                     selectedProduct.length,
-                    selectedProduct.filter((product) => product.tags.includes('cleaning') || product.tags.includes('hygiene')).length
+                    selectedProduct.filter((product) => product.tags.includes("cleaning") || product.tags.includes("hygiene")).length
                 )}
             />
             <ProgressBar
@@ -45,17 +45,17 @@ const StatisticList = ({ title, total }) => {
                 color="secondary"
                 percentage={extractPercentage(
                     selectedProduct.length,
-                    selectedProduct.filter((product) => !product.tags.includes('healthy') && !product.tags.includes('junk') && !product.tags.includes('cleaning') && !product.tags.includes('hygiene')).length
+                    selectedProduct.filter((product) => !product.tags.includes("healthy") && !product.tags.includes("junk") && !product.tags.includes("cleaning") && !product.tags.includes("hygiene")).length
                 )}
             />
 
             <Box>
                 Total:
                 <p>
-                    {total.toLocaleString('pt-br', {
+                    {total.toLocaleString("pt-br", {
                         minimumFractionDigits: 2,
-                        style: 'currency',
-                        currency: 'BRL'
+                        style: "currency",
+                        currency: "BRL"
                     })}
                 </p>
                 {

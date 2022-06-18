@@ -4,6 +4,10 @@
 
 **live demo: [https://shindi-shopping.netlify.app/](https://shindi-shopping.netlify.app/)**
 
+## Descrição
+
+Este projete é um SPA de carrinho de compras simples capaz de persistir itens do carrinho ao recarregar a página. Neste projeto, estaremos utilizando o framework React para criação do aplicativo, Redux para o gerenciamento de estado e Material UI para estilização do mesmo.
+
 ## Ferramentas utilizadas
 
 - [React](https://reactjs.org/)
